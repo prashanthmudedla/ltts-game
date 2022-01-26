@@ -1,0 +1,4 @@
+<div class="game-control">
+  <button class="start-game-button mr-20" [disabled]="isTimerActive" (click)="startGame($event)">Start Game</button>
+  <button class="pause-game-button" [disabled]="!isTimerActive" (click)="pauseGame($event)">Pause Game</button>
+</div>

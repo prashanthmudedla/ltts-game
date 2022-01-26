@@ -1,0 +1,29 @@
+.game-control {
+  display: flex;
+  flex: 1, 0, 0;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 300px;
+
+  button {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    max-width: 150px;
+    cursor: pointer;
+
+    &[disabled] {
+      cursor: not-allowed;
+    }
+  }
+
+  .start-game-button {
+    background-color: #90c150;
+    color: black;
+  }
+
+  .pause-game-button {
+    background-color: #d21502;
+    color: white;
+  }
+}
